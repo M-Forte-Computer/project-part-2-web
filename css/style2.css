@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    background-color: #4CAF50;
+    color: #ffffff; /* For improved contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer */
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background-image: url('../images/background.png');
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Dynamic, responsive size */
+    margin: 0;
+    line-height: 1.4;
+}
+
+footer {
+    font-size: 1rem; /* Readable but smaller for footer */
+}
+
+/* Navigation */
+nav {
+    background-color: #4CAF50;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Increased font size for navigation links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Adds hover effect for clarity */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 2rem; /* Dynamic, larger size for section titles */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #f0f0f0; /* Better contrast for headers */
+}
+
+main p {
+    font-size: 1.2rem; /* More readable paragraph text */
+    margin-bottom: 20px;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    border: 2px solid #ccc;
+    background-color: #b8d47a;
+    padding: 15px;
+    text-align: center;
+    color: #333333; /* Darker text for better contrast */
+}
+
+.grid-item h3 {
+    font-size: 1.5rem; /* Larger subheading in grid items */
+    margin-bottom: 10px;
+}
+
+.grid-item ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    font-size: 1.1rem; /* Increased font size for list items */
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    main p, .grid-item ul {
+        font-size: 1rem;
+    }
+}
+
+/* Inflation Calculator Specific Styles */
+#inflation-calculator {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inflation-calculator h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#inflation-calculator p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#inflation-calculator form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    color: #333333;
+}
+
+#inflation-calculator form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#inflation-calculator form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#inflation-calculator form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#inflation-calculator form button:hover {
+    background-color: #45a049;
+}
+
+#inflation-calculator #result {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Design for Inflation Calculator */
+@media (max-width: 768px) {
+    #inflation-calculator h2 {
+        font-size: 1.8rem;
+    }
+
+    #inflation-calculator form {
+        padding: 15px;
+    }
+
+    #inflation-calculator form button {
+        font-size: 1rem;
+    }
+
+    #inflation-calculator #result {
+        font-size: 1.2rem;
+    }
+}

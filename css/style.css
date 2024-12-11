@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #4CAF50; 
+}
+
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header, footer {
+    padding: 10px;
+    text-align: center;
+    background-image: url('../images/background.png'); 
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section.content-row {
+    margin-bottom: 20px;
+}
+
+.section-container {
+    display: flex;
+    gap: 20px;
+}
+
+.section-container section {
+    flex: 1;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #b8d47a;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    background-color: #4CAF50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#introduction {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    border: 2px solid #ccc;
+    background-color: #b8d47a;
+    padding-left: 20px;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 10px 5px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .section-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section-container section {
+        padding: 15px;
+    }
+
+    #introduction {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+    }
+}
+
+/* Tablet View */
+@media only screen and (max-width: 900px) {
+    .section-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-container section {
+        padding: 15px;
+    }
+
+    #introduction {
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 10px;
+    }
+}
+
+/* Larger Screens */
+@media only screen and (min-width: 901px) {
+    .section-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .section-container section {
+        padding: 20px;
+    }
+}
